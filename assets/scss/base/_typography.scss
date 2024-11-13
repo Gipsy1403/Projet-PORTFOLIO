@@ -1,0 +1,12 @@
+@use "../abstract/variable" as v;
+@use "../abstract/mixins" as m;
+
+@font-face {
+      font-family: sofa;
+      src: url(../font/Sofadi_One/SofadiOne-Regular.ttf);
+}
+
+@font-face {
+      font-family: josefine ;
+      src: url(../font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}

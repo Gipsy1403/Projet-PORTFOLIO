@@ -1,0 +1,25 @@
+@use "../abstract/variable" as v;
+@use "../abstract/mixins" as m;
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    a{
+        color: v.$white;
+    }
+   
+}
+body{
+    font-family: josefine;
+    h1,h2,h3,h4{
+        font-family: sofa;
+    }
+}
+Header, footer {
+    background-color: v.$snd-color;
+    color: v.$white;
+}

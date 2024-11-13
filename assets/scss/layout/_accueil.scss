@@ -1,0 +1,39 @@
+@use "../abstract/variable" as v;
+@use "../abstract/mixins" as m;
+
+// -------barre de navigation-------------------
+nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sofa;
+      width: 100%;
+      height: 6rem;
+
+}
+.container_barnav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      img{
+            width: 3rem;
+            margin-left: 1rem;
+      }
+      .fa-bars{
+            display: none;
+      }
+}
+.container_menu{
+      display: flex;
+      justify-content: flex-end;
+      li{
+            margin-right: 1.5rem;
+      }
+}
+// ------------Section Accueil----------------
+#accueil{
+   
+      
+      
+}
