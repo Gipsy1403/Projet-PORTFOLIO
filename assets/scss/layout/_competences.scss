@@ -3,19 +3,47 @@
 
 
 // section COMPETENCES-----------------------
-// Arrière fond -----------------------------
+//  titre et image de fond -----------------------------
 #competences{
       background-image: url(../image/space-7273891_1280.jpg);
       background-position: center;
       background-size:cover;
       padding-top: 6rem;
 }
-// présentation compétences-----------------------
 .competences{
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-bottom: 5rem;
+      width: 90%;
+}
+// présentation compétences-----------------------
+.cardcompetences{
+      max-width: 600px;
+      border-radius: 10%;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      padding-bottom: 6rem;
+      p{
+            background-color: v.$first_color;
+            border-radius: 20px; 
+            padding: 30px;
+            width: 100%;
+            box-shadow: 5px 5px 15px black;
+      }
+      img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            float: left;
+            shape-outside: margin-box;
+            margin: 30px 20px 5px 20px;
+            box-shadow: 3px 3px 7px v.$third_color;
+      }
+}
+.cardcompetences::after{
+      content: "";
+      display: block;
+      clear: block;
 }
 //  cartes des projets------------------------------
 .card_competences{

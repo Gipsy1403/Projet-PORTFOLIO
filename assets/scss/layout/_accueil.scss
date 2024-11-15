@@ -20,8 +20,9 @@ nav{
             width: 2rem;
             margin-left: 1rem;
       }
+      // menu-buger-----------------
       .fa-bars{
-            // display: none;
+            display: none;
             font-size: 2rem;
       }
 }
@@ -34,6 +35,7 @@ nav{
       }
 }
 // ------------Section Accueil----------------
+//  Titre et fond arrière-----------------
 #accueil{
       background-image: url(../image/image\ terre\ bleu\ clair\ attenuée.png);
       background-position: center;
@@ -50,18 +52,21 @@ nav{
                   transform: translateX(15rem);
             }
       }
-}
-.card{
+} 
+//  Qui suis je -------------------------------
+.cardaccueil{
       max-width: 600px;
       border-radius: 10%;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-      span, em {
-            color: v.$third_color;
-            font-weight:bolder;
-            font-size: 1.2em;
-            text-shadow: 1px 1px 3px black;
-      }
-  
+      // span, em {
+      //       color: v.$third_color;
+      //       font-weight:bolder;
+      //       font-size: 1.2em;
+      //       text-shadow: 1px 1px 3px black;
+      // }
+      margin: auto;
+      transform: translateX(50%);
+      padding-bottom: 6rem;
       p{
             background-color: v.$first_color;
             border-radius: 20px; 
@@ -77,10 +82,10 @@ nav{
             float: left;
             shape-outside: margin-box;
             margin: 30px 20px 5px 20px;
-            box-shadow: 5px 5px 10px black;
+            box-shadow: 3px 3px 7px v.$third_color;
       }
 }
-.card::after{
+.cardaccueil::after{
       content: "";
       display: block;
       clear: block;
@@ -90,21 +95,25 @@ footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 5rem;
+      // mes coordonnées------------
       .contact {
             margin-left: 1rem;
             span{
-                  font-size: 16px;
+                  font-size: 12px;
                   display: block;
             }
       }
       h3{
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             text-decoration: underline;
       }
 }
+//  logo----------------------------
 img{
       width: 2rem;
 }
+//  liens sociaux + copyright--------------------------
 .fa-copyright{
       font-size: 10px;
       display: flex;
