@@ -2,11 +2,11 @@
 @use "../abstract/mixins" as m;
 
 @font-face {
-      font-family: sofa;
-      src: url(../font/Sofadi_One/SofadiOne-Regular.ttf);
+      font-family:mulish;
+      src: url(../font/Mulish/Mulish-VariableFont_wght.ttf);
 }
 
 @font-face {
-      font-family: josefine ;
-      src: url(../font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+      font-family:spacemono;
+      src: url(../font/Space_Mono/SpaceMono-Regular.ttf);
 }

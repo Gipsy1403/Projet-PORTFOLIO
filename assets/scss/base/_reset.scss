@@ -8,18 +8,28 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    color: v.$white;
     a{
         color: v.$white;
     }
    
 }
 body{
-    font-family: josefine;
+    font-family: spacemono;
     h1,h2,h3,h4{
-        font-family: sofa;
+        font-family: mulish;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 3.125em;
+    }
+    h2{
+        font-size: 1.938em;
+    }
+    h3{
+        font-size: 1.25em;
     }
 }
 Header, footer {
     background-color: v.$snd-color;
-    color: v.$white;
 }

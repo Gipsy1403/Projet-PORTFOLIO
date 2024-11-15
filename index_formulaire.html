@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="index_accueil.html">
+    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="index_parcours.html">
     <link rel="stylesheet" href="index_competences.html">
     <script src="assets/javascript/script.js" async></script>
@@ -14,6 +14,81 @@
 </head>
 
 <body>
+    <nav>
+        <div class="container_barnav">
+            <img src="assets/image/logo rg.png" alt="Logo">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="container_menu">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./index_parcours.html">Parcours</a></li>
+                <li><a href="./index_competences.html">Compétences</a></li>
+                <li><a href="./index_formulaire.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="contact">
+        <div class="contact">
+            <div class="card_contact">
+                <img src="assets/image/usgs-7XRcZ9fbkRQ-unsplash.jpg" alt="tâche dégradée de vert" class="cercle">
+                <h2>Contact</h2>
+            </div>
+            <p>Vous trouverez mes coordonnées ci-dessous ou laissez-moi un message !</p>
+            <div class="card_details">
+                <div class="details">
+                    <img src="assets/image/logo rg.png" alt="Logo">
+                    <span class="myname">Gipsy Rouaret</span>
+                    <span>Prigonrieux - 24130</span>
+                    <span>Tél. 06.43.64.09.12</span>
+                    <span>Mail : rouaret.gipsy@orange.fr</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form_background">
+                <form action="" method="get">
+                    <div class="name_prenom">
+                        <p>
+                            <input class="content_form" type="text" name="prenom" id="prenom" placeholder="Votre prénom" size="30" maxlength="20">
+                        </p>
+                        <p>
+                            <input class="content_form" type="text" name="name" id="name" placeholder="Votre nom" size="30" maxlength="20">
+                        </p>
+                    </div>
+                    <p>
+                        <input class="content_form" type="num" name="tel" id="tel" placeholder="Votre numéro de téléphone" size="30" maxlength="10">
+                    </p>
+                    <p>
+                        <input class="content_form" type="email" name="mail" id="mail" placeholder="Votre adresse mail" size="30" maxlength="20">
+                    </p>
+                    <p>
+                        <textarea class="content_form" name="message" id="message" placeholder="Votre message"></textarea>
+                    </p>
+                    <input class="content_form btn_form" type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="contact">
+        <h3>Me contacter</h3>
+        <span>Tél. 06.42.64.09.12</span>
+        <span>Mail : rouaret.gipsy@orange.fr</span>
+    </div>
+    <img src="assets/image/logo rg.png" alt="Logo">
+    <div class="link">
+        <div class="network">
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://fr.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://x.com/?lang=fr"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Ffr.linkedin.com%2F"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/?locale=fr_FR"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <i class="fa-regular fa-copyright"> - 2024 - GR</i>
+    </div>
+</footer>
  
 
 </body>

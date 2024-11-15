@@ -1,2 +1,62 @@
 @use "../abstract/variable" as v;
 @use "../abstract/mixins" as m;
+
+body{
+      background-color: v.$snd_color;
+}
+// .animation{
+//       text-align: center;
+//       perspective: 1000px;
+// }
+// h1{
+//       transform-style: preserve-3d;
+//       display: inline-block;
+//       margin-top: 200px;
+//       font-weight: 100;
+//       letter-spacing: 10px;
+//       font-size: 190px;
+//       cursor: pointer;
+     
+
+// }
+// h1 span{
+//       pointer-events: none;
+// }
+
+
+
+// --------------Section PARCOURS ---------------------
+
+#parcours{
+      background-image: url(../image/pawel-czerwinski-g0eRErPBoTA-unsplash.jpg);
+      background-position: center;
+      background-size:cover;
+}
+.parcours{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+
+.parcours_content{
+      margin: 3rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      transform: translateX(80%);
+      background-color: v.$first_color;
+      padding:2rem;
+      border-radius: 10%;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      p:not(:last-child){
+            border-right: 1px solid white;    
+      }
+      p{
+            padding-left: 20px;
+      }
+}
+
+
+

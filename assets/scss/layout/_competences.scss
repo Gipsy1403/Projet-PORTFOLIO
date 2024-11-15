@@ -1,3 +1,65 @@
 @use "../abstract/variable" as v;
 @use "../abstract/mixins" as m;
 
+
+// section COMPETENCES-----------------------
+// Arrière fond -----------------------------
+#competences{
+      background-image: url(../image/space-7273891_1280.jpg);
+      background-position: center;
+      background-size:cover;
+      padding-top: 6rem;
+}
+// présentation compétences-----------------------
+.competences{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 5rem;
+}
+//  cartes des projets------------------------------
+.card_competences{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      h3{
+            margin-bottom: 3rem;
+      }
+}
+.content_competences{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+      margin-bottom: 6rem;
+      
+}
+.content_cardcompetences{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: v.$third_color ;
+      width: 30%;
+      padding: 1.2rem 0;
+      border-radius: 10px;
+      
+      img{
+            width: 90%;
+            object-fit: cover;
+            max-height: 200px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 2px 5px 15px grey;
+      }
+      a{
+            background-color: v.$first_color;
+            width: 90%;
+            text-align: center;
+            padding: 2rem 0;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 2px 5px 15px grey;
+            
+      }
+}

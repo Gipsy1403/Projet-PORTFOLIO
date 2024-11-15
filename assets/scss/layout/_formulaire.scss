@@ -1,2 +1,121 @@
 @use "../abstract/variable" as v;
 @use "../abstract/mixins" as m;
+
+// section CONTACT------------------------
+
+//  titre contact--------------------------
+#contact{
+      background-image: url(../image/hakon-sataoen-NU8T8LHaeiA-unsplash.jpg);
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      width: 100%;
+      padding-top: 6rem;
+}
+//  text invitation au contact-----------------
+.contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p{
+            width: 60%;
+            text-align: center;
+            margin-bottom: 3rem;
+
+      }
+}
+//  carte coordonnées---------------------------
+.card_contact{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      margin-bottom: 4rem;
+      img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 2px 7px v.$third_color;
+      }
+      h2{
+            transform: translateX(-50%);
+            text-shadow: 2px 3px 2px black;
+      }
+}
+.card_details{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      background-color: v.$third_color;
+      border-radius: 10px;
+      margin-bottom: 6rem;
+}
+.details{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: v.$snd_color;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 80%;
+      height: 100%;
+      margin: 2rem 0;
+      .myname{
+            font-weight: bold;
+            font-family: mulish;
+            font-size: 1.2em;
+      }
+      span{
+            margin-bottom: 1rem;
+            font-size: 0.8em;
+            text-align: center;
+      }
+      img{
+            margin-bottom: 2rem;
+      }
+}
+// formulaire-----------------------------------
+.form{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
+//  fond du formulaire--------------------------
+.form_background{
+      background: rgb(2,37,88);
+      background: linear-gradient(230deg, rgba(2,37,88,1) 27%, rgba(176,208,134,1) 90%);
+      padding: 5rem;
+      border-radius: 20px;
+      width: 80%;
+}
+// contenu du formulaire-------------------------
+.name_prenom{
+      display: flex;
+      width: 100%;
+}
+.name_prenom p:not(:last-child){
+      padding-right: 1rem;
+}
+.content_form{
+      background-color:rgba(176, 208, 134, 0.79);
+      padding: 0.5rem 0;
+      margin: 1rem;
+      border-radius: 20px;
+      border: 3px solid v.$third_color;
+      width: 100%;
+     
+}
+.btn_form{
+      width: 30%;
+      display: block;
+      margin: auto;
+      font-weight: bold;
+}
+
