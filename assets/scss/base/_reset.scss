@@ -29,7 +29,20 @@ body{
     h3{
         font-size: 1.25em;
     }
+    // bouton retour vers le haut de page-------------------
+    .fa-circle-chevron-up{
+        color: v.$third_color;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 30px;
+        bottom: 100px;
+
+    }
 }
 Header, footer {
     background-color: v.$snd-color;
+    
 }
