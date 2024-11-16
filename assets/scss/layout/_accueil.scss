@@ -40,19 +40,86 @@ nav{
       background-image: url(../image/image\ terre\ bleu\ clair\ attenuée.png);
       background-position: center;
       background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+ 
+
       h1{
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
             transform: translateX(-6rem);
             padding: 6rem 0;
             text-shadow: 1px 2px 4px black;
             span{
-                  transform: translateX(15rem);
+                  transform: translateX(20rem);
             }
       }
 } 
+.project{
+      width: 80%;
+      
+      .project_content{
+            background-color:v.$first_color;
+            width: 30%;
+            height:30%;
+            padding: 6rem;
+            cursor: pointer;
+            position: relative;
+            z-index:1;
+            
+            h2{
+                  text-shadow: 1px 2px 5px black;
+            }
+          
+      }
+}
+.project_content:hover{
+      background-color: v.$third_color;
+}
+.project_content:hover::before, .project_content:hover::after{
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 77%;
+      height: 80%;
+      top: 10px;
+      left:3px;
+      padding: 1rem 2rem;
+      background-color:v.$first_color;
+      animation: 1s joggle infinite;
+      border-radius: 20px;
+      box-shadow: 0 0 5px v.$snd_color;
+}
+// .project_content:hover::after{
+//       background-color: v.$snd_color;
+//       animation: 0.5s joggle infinite;
+// }
+@keyframes joggle {
+      0%{
+            transform: translate(-5px,-5px);
+      }
+      14%{
+            transform: translate(0px,-5px);
+      }
+      28%{
+            transform: translate(5px,-5px);
+      }
+      42%{
+            transform: translate(5px,0px);
+      }
+      57%{
+            transform: translate(5px,5px);
+      }
+      71%{
+            transform: translate(0px,5px);
+      }
+      85%{
+            transform: translate(-5px,5px);
+      }
+}
 //  Qui suis je -------------------------------
 .cardaccueil{
       max-width: 600px;
