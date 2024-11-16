@@ -3,43 +3,68 @@
 
 
 @media screen and (max-width:700px) {
-     .fa-bars{
-      display: block;
-      margin-right: 2rem;
+     .container_barnav{
+        .fa-bars{
+        display: block;
+        margin-right: 2rem;
      } 
+        &:hover ul{
+            display: block;
+            position: absolute;
+            top:2rem;
+            right: 0;
+        }
+    }
      .container_menu{
       display: none;
-      ul li{
-            padding: 1rem;
+        li{
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            opacity: 80%;
+           
       }
-     }
-     .container_barnav:hover ul{
-      display: block;
-      position: absolute;
-      top:1.5rem;
-      right: 0;
+        a:hover{
+            color:v.$snd-color;
+            font-size: 1.2em;
+            background-color: v.$third-color;
+            padding: 5px 15px;
+            border-radius: 30px;
+            transition: all 0.3s ease-in-out;
+        }
      }
 
+     footer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
-@media (max-width: 350px) {
+@media screen and (max-width: 490px) {
+    .btn_form{
+        font-size: 0.5em;
+    }
+}
+@media screen and (max-width: 350px) {
       .timeline {
-          flex-direction: column; /* Passe la timeline en colonne sur les petits écrans */
-          align-items: center; /* Centre les éléments verticalement */
+          flex-direction: column; 
+          align-items: center; 
       }
       .timeline .event {
-          width: 100%; /* Prend toute la largeur disponible */
-          margin-bottom: 15px; /* Espacement réduit entre les événements */
+          width: 100%; 
+          margin-bottom: 15px; 
       }
       .timeline .event .date {
-          font-size: 12px; /* Réduit la taille des dates */
-          margin-bottom: 5px; /* Ajoute de l'espace sous les dates */
+          font-size: 12px; 
+          margin-bottom: 5px; 
       }
       .timeline .event .content {
-          font-size: 10px; /* Réduit la taille de la police du contenu */
-          padding: 8px 15px; /* Réduit l'espacement autour du contenu */
+          font-size: 10px; 
+          padding: 8px 15px; 
       }
       .timeline .event .point {
-          width: 10px; /* Réduit la taille des points */
+          width: 10px; 
           height: 10px;
       }
   }

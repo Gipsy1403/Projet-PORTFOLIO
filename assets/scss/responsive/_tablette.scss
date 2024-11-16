@@ -1,7 +1,47 @@
 @use "../abstract/variable" as v;
 @use "../abstract/mixins" as m;
 
+@media screen and (max-width:1550px) {
+      .cardaccueil{
+      transform: translateX(0%);
+      }
+      .form{
+            width: 100%;
+      }
+      .card_details{
+            width: 70%;
+      }
+}
 
 @media screen and (max-width:1200px) {
-      
+      .parcours{
+            flex-direction: column-reverse;
+            span{
+                  margin-bottom: 5rem;
+            }
+      }
+      .competences{
+            flex-direction: column-reverse;
+            h2{
+                  margin-bottom: 5rem;
+            }
+      }
+      #contact{
+            flex-direction: column;
+      }
+}
+
+@media screen and (max-width:800px) {
+      .form_background{
+            padding: 1rem;
+      }
+      .name_prenom{
+            flex-direction: column;
+      }
+      .content_form{
+            width: 80%;
+      }
+      .btn_form{
+            width: 30%;
+      }
 }
