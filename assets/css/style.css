@@ -27,15 +27,18 @@ body h2 {
 body h3 {
   font-size: 1.25em;
 }
-body .fa-circle-chevron-up {
-  color: #b0d086;
-  font-size: 2em;
+body .btn_scroll {
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   right: 30px;
   bottom: 100px;
+  cursor: pointer;
+}
+body .btn_scroll .fa-circle-chevron-up {
+  color: #b0d086;
+  font-size: 2em;
 }
 
 @font-face {

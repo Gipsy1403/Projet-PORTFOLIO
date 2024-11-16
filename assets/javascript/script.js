@@ -11,3 +11,13 @@ spanContainers.forEach(item=>{
       })
       // transition-delay indique la durée à attendre avant de débuter la transition. Ici il attend 0.07s entre chaque lettre. le s signifie que ce style est calculé en secondes.
 })
+
+const btnScroll=document.querySelector(".btn_scroll");
+btnScroll.addEventListener("click",()=>{
+
+      window.scrollTo({
+            top:0,
+            left: 0,
+            behavior:"smooth",
+      })
+})
