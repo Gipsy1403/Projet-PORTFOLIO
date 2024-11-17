@@ -3,6 +3,7 @@
 
 
 @media screen and (max-width:700px) {
+    // barre de navigation----------------
      .container_barnav{
         .fa-bars{
         display: block;
@@ -15,6 +16,7 @@
             right: 0;
         }
     }
+    // menu en colonne---------------------
      .container_menu{
       display: none;
         li{
@@ -34,7 +36,32 @@
             transition: all 0.3s ease-in-out;
         }
      }
-
+    //   gros titre de l'accueil------------------
+     .titles{
+        text-align: center;
+        h1{
+            transform: translateX(0rem);
+            span{
+                transform: translateX(0rem);
+            }
+     }
+    }
+    //  centralisation du titre parcours----------------
+    .parcours{
+        margin: auto;
+    }
+    //  centralisation et diminution des espaces du titre compétences----------------
+    .competences{
+        margin: auto;
+        h2{
+            letter-spacing: 0;
+        }
+    }
+    // Redimension de la carte Contact----------
+    .card_contact img, h2{
+        width: 100%;
+    }
+    // mise en colonne du footer-------------
      footer{
         display: flex;
         flex-direction: column;
@@ -42,11 +69,13 @@
     }
 }
 @media screen and (max-width: 490px) {
+    // diminution de la police du bouton envoyer dans Contact-----------
     .btn_form{
         font-size: 0.5em;
     }
 }
 @media screen and (max-width: 350px) {
+    // mise en colonne de l'échelle du temps Parcours--------
       .timeline {
           flex-direction: column; 
           align-items: center; 

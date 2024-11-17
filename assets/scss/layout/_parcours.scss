@@ -1,9 +1,6 @@
 @use "../abstract/variable" as v;
 @use "../abstract/mixins" as m;
 
-body{
-      background-color: v.$snd_color;
-}
 
 // --------------Section PARCOURS ---------------------
 // fond arrière PARCOURS-----------------
@@ -11,7 +8,7 @@ body{
       background-image: url(../image/pawel-czerwinski-g0eRErPBoTA-unsplash.jpg);
       background-position: center;
       background-size:cover;
-      padding-top: 6rem;
+      padding: 6rem 0;
 
 }
 .parcours{
@@ -24,7 +21,6 @@ body{
 .cardparcours{
       max-width: 600px;
       border-radius: 10%;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
       padding-bottom: 6rem;
       p{
             background-color: v.$first_color;
@@ -59,7 +55,6 @@ body{
             letter-spacing: 4px;
             will-change: transform;
             display: inline-block;
-            
       }
 }
 .s1 span{
@@ -87,6 +82,7 @@ body{
       justify-content: space-around;
       align-items: flex-start;
       flex-wrap: wrap;
+      margin-top: 3rem;
       .event {
             display: flex;
             flex-direction: column;
@@ -106,7 +102,6 @@ body{
             border-radius: 10px;
             font-size: 0.6em;
             margin-top: 1rem;
-            margin-bottom: 6rem;
             }
             .point {
             width: 12px;

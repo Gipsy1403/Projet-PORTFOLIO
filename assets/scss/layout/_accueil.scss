@@ -45,8 +45,9 @@ nav{
       justify-content: center;
       align-items: center;
       flex-direction: column;
- 
+}
 
+.titles{
       h1{
             display: flex;
             flex-direction: column;
@@ -58,72 +59,63 @@ nav{
             }
       }
 } 
+
 // titre portfolio------------------------
 .project{
-      width: 30%;
-      transform: translateX(-70%);
+      width: 300px;
+      height: 400px;
+      transform: translateX(-150%);
       margin-bottom: 5rem;
+      position: relative;
+      z-index: 0;
+      
       .project_content{
             background-color:v.$first_color;
             width: 100%;
             height:100%;
-            padding: 6rem;
-            cursor: pointer;
-            position: relative;
-            z-index:1;
-
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px black;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             h2{
-                  text-shadow: 1px 2px 5px black;
+                  text-shadow: 1px 12px 5px black;
+                  letter-spacing: 3px;
+                  &::first-letter{
+                        font-size: 2em;
+                        color: v.$third_color;
+                        letter-spacing: -8px;
+                  }
             }
       }
 }
-.project_content:hover{
-      background-color: v.$third_color;
-}
-.project_content:hover::before, .project_content:hover::after{
+.project_content::before, .project_content::after{
       content: "";
-      display: block;
       position: absolute;
       z-index: -1;
-      width: 100%;
-      height:100%;
-      top: 10px;
-      left:3px;
+      width: 74%;
+      height: 90%;
+      top: 0;
+      left:0;
+      transform: scale(1.03);
       padding: 1rem 2rem;
-      background-color:v.$first_color;
-      animation: 1s joggle infinite;
+      background:linear-gradient(45deg,v.$first_color,v.$snd-color,v.$third_color,v.$first_color,v.$snd-color,v.$third_color,v.$first_color,v.$snd-color,v.$third_color,v.$first_color,v.$snd-color);
       border-radius: 20px;
-      box-shadow: 0 0 5px v.$snd_color;
+      animation: 20s animation infinite;
+      background-size: 500%;
 }
 //  effet pour le titre portfolio---------------
-@keyframes joggle {
-      0%{
-            transform: translate(-5px,-5px);
-      }
-      14%{
-            transform: translate(0px,-5px);
-      }
-      28%{
-            transform: translate(5px,-5px);
-      }
-      42%{
-            transform: translate(5px,0px);
-      }
-      57%{
-            transform: translate(5px,5px);
-      }
-      71%{
-            transform: translate(0px,5px);
-      }
-      85%{
-            transform: translate(-5px,5px);
-      }
+@keyframes animation {
+      0%{background-position: 0 0;}
+      50%{background-position: 300% 0;}
+      100%{background-position: 0 0;}
 }
 //  Qui suis je -------------------------------
 .cardaccueil{
       max-width: 600px;
       border-radius: 10%;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
       // span, em {
       //       color: v.$third_color;
       //       font-weight:bolder;

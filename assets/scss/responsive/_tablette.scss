@@ -2,36 +2,48 @@
 @use "../abstract/mixins" as m;
 
 @media screen and (max-width:1550px) {
+      // anulation du retrait de la carte Accueil
       .cardaccueil{
       transform: translateX(0%);
       }
+      // redimension du formulaire dans Contact
       .form{
             width: 100%;
       }
+      // redimension de la carte coordonnées dans Contact
       .card_details{
             width: 70%;
       }
 }
-
+@media screen and (max-width:1300px) {
+      // annulation du retrait du titre Portfolio dans Accueil
+      .project{
+            transform: translateX(0%);
+      }
+}
 @media screen and (max-width:1200px) {
+      // redimension de la page du Parcours
       .parcours{
             flex-direction: column-reverse;
             span{
                   margin-bottom: 5rem;
             }
       }
+      // redimension de la page Compétences
       .competences{
             flex-direction: column-reverse;
             h2{
                   margin-bottom: 5rem;
             }
       }
+      // mise en colonne du formulaire Contact
       #contact{
             flex-direction: column;
       }
 }
 
 @media screen and (max-width:800px) {
+      // redimension du fond et remaniement du formulaire Contact
       .form_background{
             padding: 1rem;
       }

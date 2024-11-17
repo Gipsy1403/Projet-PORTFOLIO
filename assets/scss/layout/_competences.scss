@@ -8,13 +8,17 @@
       background-image: url(../image/space-7273891_1280.jpg);
       background-position: center;
       background-size:cover;
-      padding-top: 6rem;
+      padding: 6rem 0;
+      
 }
 .competences{
       display: flex;
       justify-content: space-around;
       align-items: center;
       width: 90%;
+      h2{
+            letter-spacing: 0.3em;
+      }
 }
 // présentation compétences-----------------------
 .cardcompetences{

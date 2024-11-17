@@ -12,7 +12,7 @@
       justify-content:center;
       align-items: center;
       width: 100%;
-      padding-top: 6rem;
+      padding: 6rem 0;
 }
 //  text invitation au contact-----------------
 .contact{
@@ -42,8 +42,9 @@
             box-shadow: 0 2px 7px v.$third_color;
       }
       h2{
-            transform: translateX(-50%);
+            transform: translateX(-40%);
             text-shadow: 2px 3px 2px black;
+            letter-spacing: 0.3em;
       }
 }
 .card_details{
@@ -130,9 +131,10 @@
 }
 // gradient au survol----------------
 .btn_form:hover {
-background-position: right center;
-color: #fff;
-text-decoration: none;
+      background-position: right center;
+      color: #fff;
+      box-shadow: 10px 5px 5px black;
+
 }
 // effet quand bouton activé----------------------------
 .btn_form:active{

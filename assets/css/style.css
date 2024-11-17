@@ -13,6 +13,7 @@
 
 body {
   font-family: spacemono;
+  background-color: #022558;
 }
 body h1, body h2, body h3, body h4 {
   font-family: mulish;
@@ -92,82 +93,78 @@ nav {
   align-items: center;
   flex-direction: column;
 }
-#accueil h1 {
+
+.titles h1 {
   display: flex;
   flex-direction: column;
   transform: translateX(-6rem);
   padding: 6rem 0;
   text-shadow: 1px 2px 4px black;
 }
-#accueil h1 span {
+.titles h1 span {
   transform: translateX(20rem);
 }
 
 .project {
-  width: 30%;
-  transform: translateX(-70%);
+  width: 300px;
+  height: 400px;
+  transform: translateX(-150%);
   margin-bottom: 5rem;
+  position: relative;
+  z-index: 0;
 }
 .project .project_content {
   background-color: #005698;
   width: 100%;
   height: 100%;
-  padding: 6rem;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .project .project_content h2 {
-  text-shadow: 1px 2px 5px black;
+  text-shadow: 1px 12px 5px black;
+  letter-spacing: 3px;
+}
+.project .project_content h2::first-letter {
+  font-size: 2em;
+  color: #b0d086;
+  letter-spacing: -8px;
 }
 
-.project_content:hover {
-  background-color: #b0d086;
-}
-
-.project_content:hover::before, .project_content:hover::after {
+.project_content::before, .project_content::after {
   content: "";
-  display: block;
   position: absolute;
   z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 10px;
-  left: 3px;
+  width: 74%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  transform: scale(1.03);
   padding: 1rem 2rem;
-  background-color: #005698;
-  animation: 1s joggle infinite;
+  background: linear-gradient(45deg, #005698, #022558, #b0d086, #005698, #022558, #b0d086, #005698, #022558, #b0d086, #005698, #022558);
   border-radius: 20px;
-  box-shadow: 0 0 5px #022558;
+  animation: 20s animation infinite;
+  background-size: 500%;
 }
 
-@keyframes joggle {
+@keyframes animation {
   0% {
-    transform: translate(-5px, -5px);
+    background-position: 0 0;
   }
-  14% {
-    transform: translate(0px, -5px);
+  50% {
+    background-position: 300% 0;
   }
-  28% {
-    transform: translate(5px, -5px);
-  }
-  42% {
-    transform: translate(5px, 0px);
-  }
-  57% {
-    transform: translate(5px, 5px);
-  }
-  71% {
-    transform: translate(0px, 5px);
-  }
-  85% {
-    transform: translate(-5px, 5px);
+  100% {
+    background-position: 0 0;
   }
 }
 .cardaccueil {
   max-width: 600px;
   border-radius: 10%;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   margin: auto;
   transform: translateX(50%);
   padding-bottom: 6rem;
@@ -224,15 +221,11 @@ img {
   margin-right: 1rem;
 }
 
-body {
-  background-color: #022558;
-}
-
 #parcours {
   background-image: url(../image/pawel-czerwinski-g0eRErPBoTA-unsplash.jpg);
   background-position: center;
   background-size: cover;
-  padding-top: 6rem;
+  padding: 6rem 0;
 }
 
 .parcours {
@@ -245,7 +238,6 @@ body {
 .cardparcours {
   max-width: 600px;
   border-radius: 10%;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   padding-bottom: 6rem;
 }
 .cardparcours p {
@@ -312,6 +304,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-top: 3rem;
 }
 .timeline .event {
   display: flex;
@@ -333,7 +326,6 @@ body {
   border-radius: 10px;
   font-size: 0.6em;
   margin-top: 1rem;
-  margin-bottom: 6rem;
 }
 .timeline .event .point {
   width: 12px;
@@ -363,7 +355,7 @@ body {
   background-image: url(../image/space-7273891_1280.jpg);
   background-position: center;
   background-size: cover;
-  padding-top: 6rem;
+  padding: 6rem 0;
 }
 
 .competences {
@@ -371,6 +363,9 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 90%;
+}
+.competences h2 {
+  letter-spacing: 0.3em;
 }
 
 .cardcompetences {
@@ -501,7 +496,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 6rem;
+  padding: 6rem 0;
 }
 
 .contact {
@@ -531,8 +526,9 @@ body {
   box-shadow: 0 2px 7px #b0d086;
 }
 .card_contact h2 {
-  transform: translateX(-50%);
+  transform: translateX(-40%);
   text-shadow: 2px 3px 2px black;
+  letter-spacing: 0.3em;
 }
 
 .card_details {
@@ -622,7 +618,7 @@ body {
 .btn_form:hover {
   background-position: right center;
   color: #fff;
-  text-decoration: none;
+  box-shadow: 10px 5px 5px black;
 }
 
 .btn_form:active {
@@ -639,6 +635,11 @@ body {
   }
   .card_details {
     width: 70%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .project {
+    transform: translateX(0%);
   }
 }
 @media screen and (max-width: 1200px) {
@@ -700,6 +701,27 @@ body {
     padding: 5px 15px;
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
+  }
+  .titles {
+    text-align: center;
+  }
+  .titles h1 {
+    transform: translateX(0rem);
+  }
+  .titles h1 span {
+    transform: translateX(0rem);
+  }
+  .parcours {
+    margin: auto;
+  }
+  .competences {
+    margin: auto;
+  }
+  .competences h2 {
+    letter-spacing: 0;
+  }
+  .card_contact img, h2 {
+    width: 100%;
   }
   footer {
     display: flex;
