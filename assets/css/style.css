@@ -234,6 +234,14 @@ img {
   align-items: center;
   width: 90%;
 }
+.parcours h2 {
+  letter-spacing: 0.3em;
+}
+.parcours h2::first-letter {
+  font-size: 2em;
+  letter-spacing: -8px;
+  color: #b0d086;
+}
 
 .cardparcours {
   max-width: 600px;
@@ -262,41 +270,6 @@ img {
   content: "";
   display: block;
   clear: block;
-}
-
-.titlecontent {
-  position: relative;
-}
-.titlecontent span {
-  font-size: 3em;
-  font-weight: bolder;
-  font-family: mulish;
-  letter-spacing: 4px;
-  will-change: transform;
-  display: inline-block;
-}
-
-.s1 span {
-  transform-origin: bottom;
-}
-
-.s2 span {
-  transform-origin: top;
-  transform: translateY(100%) rotateX(-90deg);
-}
-
-.s2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.titlecontent:hover .s1 span {
-  transform: translateY(-100%) rotateX(-90deg);
-}
-
-.titlecontent:hover .s2 span {
-  transform: translateY(0%) rotateX(0deg);
 }
 
 .timeline {
@@ -366,6 +339,10 @@ img {
 }
 .competences h2 {
   letter-spacing: 0.3em;
+}
+.competences h2::first-letter {
+  font-size: 2em;
+  color: #b0d086;
 }
 
 .cardcompetences {
@@ -649,6 +626,9 @@ img {
   .parcours span {
     margin-bottom: 5rem;
   }
+  h2 {
+    margin-bottom: 5rem;
+  }
   .competences {
     flex-direction: column-reverse;
   }
@@ -681,7 +661,7 @@ img {
   .container_barnav:hover ul {
     display: block;
     position: absolute;
-    top: 2rem;
+    top: 60px;
     right: 0;
   }
   .container_menu {
@@ -689,18 +669,37 @@ img {
   }
   .container_menu li {
     padding: 0.5rem;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    opacity: 80%;
+    text-align: end;
   }
-  .container_menu a:hover {
-    color: #022558;
-    font-size: 1.2em;
-    background-color: #b0d086;
-    padding: 5px 15px;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
+  .container_menu a {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    padding-right: 10px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .container_menu a::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    left: 140px;
+    width: 100%;
+    height: 100%;
+    background: rgb(2, 37, 88);
+    background: linear-gradient(45deg, rgb(2, 37, 88) 27%, rgb(176, 208, 134) 90%);
+    border-radius: 50% 0 0 50%;
+    transition: all 1s;
+    z-index: -1;
+  }
+  .container_menu a:hover::before {
+    left: 0;
+    border-radius: 70% 1% 0 1%;
+    border: 1px solid rgb(176, 208, 134);
   }
   .titles {
     text-align: center;

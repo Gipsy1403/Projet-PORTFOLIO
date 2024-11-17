@@ -3,7 +3,7 @@
 
 
 @media screen and (max-width:700px) {
-    // barre de navigation----------------
+     // barre de navigation----------------
      .container_barnav{
         .fa-bars{
         display: block;
@@ -12,7 +12,7 @@
         &:hover ul{
             display: block;
             position: absolute;
-            top:2rem;
+            top:60px;
             right: 0;
         }
     }
@@ -21,19 +21,39 @@
       display: none;
         li{
             padding: 0.5rem;
-            text-align: center;
-            font-size: 1.2em;
-            font-weight: bold;
-            opacity: 80%;
-           
+            text-align: end;
+          //   font-size: 1.2em;
       }
-        a:hover{
-            color:v.$snd-color;
-            font-size: 1.2em;
-            background-color: v.$third-color;
-            padding: 5px 15px;
-            border-radius: 30px;
-            transition: all 0.3s ease-in-out;
+      a{
+          position: relative;
+          color:white;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          height: 40px;
+          width: 150px;
+          padding-right: 10px;
+          overflow: hidden;
+          z-index: 0;
+          &::before{
+                content: "";
+                position: absolute;
+                right: 0px;
+                left: 140px;
+                width: 100%;
+                height: 100%;
+                background: rgb(2,37,88);
+                background: linear-gradient(45deg, rgba(2,37,88,1) 27%, rgba(176,208,134,1) 90%);
+                border-radius: 50% 0 0 50%;
+                transition: all 1s;
+                z-index: -1;
+          }
+      }
+        a:hover::before{
+          left: 0;
+          border-radius: 70% 1% 0 1%;
+          border: 1px solid rgba(176,208,134,1);
+               
         }
      }
     //   gros titre de l'accueil------------------

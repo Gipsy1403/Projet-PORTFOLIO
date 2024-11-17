@@ -16,6 +16,15 @@
       justify-content: space-around;
       align-items: center;
       width: 90%;
+      h2{
+            letter-spacing: 0.3em;
+            &::first-letter{
+                  font-size: 2em;
+                  letter-spacing: -8px;
+                  color: v.$third_color;
+            }
+
+      }
 }
 // Carte mon PARCOURS---------------
 .cardparcours{
@@ -45,37 +54,6 @@
       display: block;
       clear: block;
 }
-//  animation du titre parcours-------------------
-.titlecontent{
-      position: relative;
-      span {
-            font-size: 3em;
-            font-weight: bolder;
-            font-family: mulish;
-            letter-spacing: 4px;
-            will-change: transform;
-            display: inline-block;
-      }
-}
-.s1 span{
-      transform-origin: bottom;
-}
-.s2 span{
-      transform-origin: top;
-      transform: translateY(100%) rotateX(-90deg);
-}
-.s2{
-      position: absolute;
-      top: 0;
-      left: 0;
-}
-.titlecontent:hover .s1 span{
-      transform: translateY(-100%) rotateX(-90deg);
-}
-.titlecontent:hover .s2 span{
-      transform: translateY(0%) rotateX(0deg);
-}
-
 //  Détails du parcours avec échelle de temps----------------
 .timeline {
       display: flex;

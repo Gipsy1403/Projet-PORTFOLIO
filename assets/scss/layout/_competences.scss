@@ -18,6 +18,10 @@
       width: 90%;
       h2{
             letter-spacing: 0.3em;
+            &::first-letter{
+                  font-size: 2em;
+                  color: v.$third_color;
+            }
       }
 }
 // présentation compétences-----------------------
